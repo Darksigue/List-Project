@@ -1,0 +1,19 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db" /*You can change this url for the database that u are using*/
+}
+
+model task {
+  id          Int     @id @default(autoincrement())
+  title       String
+  description String?
+  status      String
+}

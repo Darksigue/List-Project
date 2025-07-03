@@ -42,6 +42,8 @@
     "typescript": "~4.5.4"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.1"
+    "@prisma/client": "^6.11.0",
+    "electron-squirrel-startup": "^1.0.1",
+    "prisma": "^6.11.0"
   }
 }

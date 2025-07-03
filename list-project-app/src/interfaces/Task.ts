@@ -4,6 +4,7 @@ interface TaskInterface {
     description?: string;
     status: string;
 
+    createTask(title: string, status: string, description?: string): string;
     getTask(): Promise<TaskInterface | void>;
     getTasks(): Promise<TaskInterface[] | void>;
     setTitle(): void;
